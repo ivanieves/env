@@ -1,0 +1,64 @@
+Last login: Thu Sep 26 01:56:41 on ttys000
+(base) Ivans-MacBook-Pro:~ ivanieves$ scrapy crawl fidu -t csv
+-bash: scrapy: command not found
+(base) Ivans-MacBook-Pro:~ ivanieves$ cd env
+(base) Ivans-MacBook-Pro:env ivanieves$ scrapy crawl fidu -t csv
+-bash: scrapy: command not found
+(base) Ivans-MacBook-Pro:env ivanieves$ virtualenv fidu
+Using base prefix '//anaconda3'
+New python executable in /Users/ivanieves/env/fidu/bin/python
+Installing setuptools, pip, wheel...
+done.
+(base) Ivans-MacBook-Pro:env ivanieves$ virtualenv py36
+Using base prefix '//anaconda3'
+New python executable in /Users/ivanieves/env/py36/bin/python
+Installing setuptools, pip, wheel...
+done.
+(base) Ivans-MacBook-Pro:env ivanieves$ source /env/py36/bin/activate
+-bash: /env/py36/bin/activate: No such file or directory
+(base) Ivans-MacBook-Pro:env ivanieves$ cd ~
+(base) Ivans-MacBook-Pro:~ ivanieves$ source /env/py36/bin/activate
+-bash: /env/py36/bin/activate: No such file or directory
+(base) Ivans-MacBook-Pro:~ ivanieves$ virtualenv ~/env/py36
+Using base prefix '//anaconda3'
+New python executable in /Users/ivanieves/env/py36/bin/python
+Installing setuptools, pip, wheel...
+done.
+(base) Ivans-MacBook-Pro:~ ivanieves$ source /env/py36/bin/activate
+-bash: /env/py36/bin/activate: No such file or directory
+(base) Ivans-MacBook-Pro:~ ivanieves$ source ~/env/py36/bin/activate
+(py36) (base) Ivans-MacBook-Pro:~ ivanieves$ cd env/
+(py36) (base) Ivans-MacBook-Pro:env ivanieves$ virtualenv ~/env/py36
+Using base prefix '//anaconda3'
+New python executable in /Users/ivanieves/env/py36/bin/python
+Installing setuptools, pip, wheel...
+done.
+(py36) (base) Ivans-MacBook-Pro:env ivanieves$ source /Users/ivanieves/env/py36/bin/activate
+(py36) (base) Ivans-MacBook-Pro:env ivanieves$ pip install scrapy
+Requirement already satisfied: scrapy in ./py36/lib/python3.7/site-packages (1.7.3)
+Requirement already satisfied: PyDispatcher>=2.0.5 in ./py36/lib/python3.7/site-packages (from scrapy) (2.0.5)
+Requirement already satisfied: lxml; python_version != "3.4" in ./py36/lib/python3.7/site-packages (from scrapy) (4.4.1)
+Requirement already satisfied: parsel>=1.5 in ./py36/lib/python3.7/site-packages (from scrapy) (1.5.2)
+Requirement already satisfied: pyOpenSSL in ./py36/lib/python3.7/site-packages (from scrapy) (19.0.0)
+Requirement already satisfied: Twisted>=13.1.0; python_version != "3.4" in ./py36/lib/python3.7/site-packages (from scrapy) (19.7.0)
+Requirement already satisfied: cssselect>=0.9 in ./py36/lib/python3.7/site-packages (from scrapy) (1.1.0)
+Requirement already satisfied: six>=1.5.2 in ./py36/lib/python3.7/site-packages (from scrapy) (1.12.0)
+Requirement already satisfied: service-identity in ./py36/lib/python3.7/site-packages (from scrapy) (18.1.0)
+Requirement already satisfied: w3lib>=1.17.0 in ./py36/lib/python3.7/site-packages (from scrapy) (1.21.0)
+Requirement already satisfied: queuelib in ./py36/lib/python3.7/site-packages (from scrapy) (1.5.0)
+Requirement already satisfied: cryptography>=2.3 in ./py36/lib/python3.7/site-packages (from pyOpenSSL->scrapy) (2.7)
+Requirement already satisfied: Automat>=0.3.0 in ./py36/lib/python3.7/site-packages (from Twisted>=13.1.0; python_version != "3.4"->scrapy) (0.7.0)
+Requirement already satisfied: zope.interface>=4.4.2 in ./py36/lib/python3.7/site-packages (from Twisted>=13.1.0; python_version != "3.4"->scrapy) (4.6.0)
+Requirement already satisfied: constantly>=15.1 in ./py36/lib/python3.7/site-packages (from Twisted>=13.1.0; python_version != "3.4"->scrapy) (15.1.0)
+Requirement already satisfied: incremental>=16.10.1 in ./py36/lib/python3.7/site-packages (from Twisted>=13.1.0; python_version != "3.4"->scrapy) (17.5.0)
+Requirement already satisfied: hyperlink>=17.1.1 in ./py36/lib/python3.7/site-packages (from Twisted>=13.1.0; python_version != "3.4"->scrapy) (19.0.0)
+Requirement already satisfied: PyHamcrest>=1.9.0 in ./py36/lib/python3.7/site-packages (from Twisted>=13.1.0; python_version != "3.4"->scrapy) (1.9.0)
+Requirement already satisfied: attrs>=17.4.0 in ./py36/lib/python3.7/site-packages (from Twisted>=13.1.0; python_version != "3.4"->scrapy) (19.1.0)
+Requirement already satisfied: pyasn1-modules in ./py36/lib/python3.7/site-packages (from service-identity->scrapy) (0.2.6)
+Requirement already satisfied: pyasn1 in ./py36/lib/python3.7/site-packages (from service-identity->scrapy) (0.4.7)
+Requirement already satisfied: asn1crypto>=0.21.0 in ./py36/lib/python3.7/site-packages (from cryptography>=2.3->pyOpenSSL->scrapy) (0.24.0)
+Requirement already satisfied: cffi!=1.11.3,>=1.8 in ./py36/lib/python3.7/site-packages (from cryptography>=2.3->pyOpenSSL->scrapy) (1.12.3)
+Requirement already satisfied: setuptools in ./py36/lib/python3.7/site-packages (from zope.interface>=4.4.2->Twisted>=13.1.0; python_version != "3.4"->scrapy) (41.2.0)
+Requirement already satisfied: idna>=2.5 in ./py36/lib/python3.7/site-packages (from hyperlink>=17.1.1->Twisted>=13.1.0; python_version != "3.4"->scrapy) (2.8)
+Requirement already satisfied: pycparser in ./py36/lib/python3.7/site-packages (from cffi!=1.11.3,>=1.8->cryptography>=2.3->pyOpenSSL->scrapy) (2.19)
+(py36) (base) Ivans-MacBook-Pro:env ivanieves$ 
