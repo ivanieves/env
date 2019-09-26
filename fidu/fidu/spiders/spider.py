@@ -23,7 +23,7 @@ class FiduSpider(CrawlSpider):
 
 		#info de los productos	
 		ml_item['titulo'] = response.xpath('normalize-space(//*[@id="short-desc"]/div/header/h1/text())').extract()
-		ml_item['precio'] = response.xpath('normalize-space(//*[@id="productInfo"]/fieldset[1]/span[2]/span[2]/text())').extract()
+		ml_item['precio'] = response.xpath('normalize-space(//*[@id="productInfo"]/fieldset[1]/span[2]/span[2])').extract()
 		ml_item['numero_vendidos'] = response.xpath('normalize-space(//div[@class="item-conditions"]/text())').extract()
 		ml_item['envio_gratis'] = response.xpath('normalize-space(//*[@id="productInfo"]/div[1]/fieldset[2]/article/div[1]/p/span/text())').extract()
 		self.item_count += 1

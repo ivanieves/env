@@ -3248,4 +3248,5 @@ scrapy.exceptions.NotSupported: Unsupported URL scheme '': no handler available 
  'scheduler/enqueued/memory': 56,
  'start_time': datetime.datetime(2019, 9, 26, 0, 22, 43, 314407)}
 2019-09-25 19:22:52 [scrapy.core.engine] INFO: Spider closed (item_exceeded)
-(py36) (base) Ivans-MacBook-Pro:fidu ivanieves$ 
+(py36) (base) Ivans-MacBook-Pro:fidu ivanieves$ scrapy crawl fidu -t csv
+
