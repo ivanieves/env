@@ -8,12 +8,12 @@ class FiduSpider(CrawlSpider):
 	name = 'fidu'
 	item_count= 0
 	allowed_domain = ['www.mercadolibre.com.co']
-	start_urls= ['https://listado.mercadolibre.com.co/camas#D[A:camas]']
+	start_urls= ['https://listado.mercadolibre.com.co/celulares#D[A:celulares]']
 
 	rules = {
 
 		Rule(LinkExtractor(allow =(), restrict_xpaths = ('//span[@class="andes-pagination__arrow-title"]'))),
-		Rule(LinkExtractor(allow =(), restrict_xpaths = ('//*[@class="item__title list-view-item-title"]')),
+		Rule(LinkExtractor(allow =(), restrict_xpaths = ('//h2[@class="item__title list-view-item-title"]')),
 							callback = 'parse_item', follow = False)
 	
 	} 
